@@ -157,9 +157,12 @@ body {
   color: var(--focus-hover-link-color);
 }
 
+.filter {
+  --color-filter-button: #f5f4fa;
+}
 /* section main */
 .filter .filter-button {
-  background: #f5f4fa;
+  background: var(--color-filter-button);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
