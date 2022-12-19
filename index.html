@@ -3,56 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Praca domowa" />
-    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Studio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="">Logo_WebStudio</a>
-        <ul>
-          <li><a href="">Agencja</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Kontakt</a></li>
+        <a href="" class="logo">Web<span style="color: black">Studio</span></a>
+        <ul class="site-menu">
+          <li><a class="link-menu" href="/index.html">Agencja</a></li>
+          <li><a class="link-menu" href="/portfolio.html">Portfolio</a></li>
+          <li><a class="link-menu" href="">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="header-contact">
+        <li>
+          <a class="header-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="header-tel" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
 
     <main>
       <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <h1 class="first-page-title">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+        </h1>
         <img src="./images/baner.jpg" alt="komputer na biurku" width="1600" />
-        <button type="button">Zamów usługę</button>
+        <button class="first-page-button" type="button">Zamów usługę</button>
       </section>
       <section>
         <ul>
           <li>
-            <h5>LOREM IPSUM</h5>
-            <p>
+            <h5 class="first-page-title-article">LOREM IPSUM</h5>
+            <p class="text-demo-article">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h5>LOREM IPSUM</h5>
-            <p>
+            <h5 class="first-page-title-article">LOREM IPSUM</h5>
+            <p class="text-demo-article">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h5>LOREM IPSUM</h5>
-            <p>
+            <h5 class="first-page-title-article">LOREM IPSUM</h5>
+            <p class="text-demo-article">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h5>LOREM IPSUM</h5>
-            <p>
+            <h5 class="first-page-title-article">LOREM IPSUM</h5>
+            <p class="text-demo-article">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -60,7 +76,7 @@
         </ul>
       </section>
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="small-headers">Czym się zajmujemy</h2>
         <img
           src="./images/img-1.jpg"
           alt="komputer na biurku"
@@ -81,7 +97,7 @@
         />
       </section>
       <section>
-        <h2>Nasz zespół</h2>
+        <h2 class="small-headers">Nasz zespół</h2>
         <ul>
           <li>
             <figure>
@@ -90,7 +106,10 @@
                 alt="portret John From Production"
                 width="270"
               />
-              <figcaption>Product Designer</figcaption>
+              <figcaption>
+                <p class="employee">John Doe</p>
+                <p class="worker-profession">Product Designer</p>
+              </figcaption>
             </figure>
           </li>
           <li>
@@ -100,7 +119,10 @@
                 alt="portret John From Developer"
                 width="270"
               />
-              <figcaption>Frontend Developer</figcaption>
+              <figcaption>
+                <p class="employee">John Doe</p>
+                <p class="worker-profession">Frontend Developer</p>
+              </figcaption>
             </figure>
           </li>
 
@@ -111,7 +133,10 @@
                 alt="portret John From Marketing"
                 width="270"
               />
-              <figcaption>Marketing</figcaption>
+              <figcaption>
+                <p class="employee">John Doe</p>
+                <p class="worker-profession">Marketing</p>
+              </figcaption>
             </figure>
           </li>
           <li>
@@ -121,7 +146,10 @@
                 alt="portret John From Designer"
                 width="270"
               />
-              <figcaption>UI Designer</figcaption>
+              <figcaption>
+                <p class="employee">John Doe</p>
+                <p class="worker-profession">UI Designer</p>
+              </figcaption>
             </figure>
           </li>
         </ul>
@@ -129,13 +157,19 @@
     </main>
 
     <footer>
-      <a href="">Logo_WebStudio</a>
+      <a href="" class="logo">Web<span style="color: black">Studio</span></a>
 
       <address>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <ul class="footer-contact">
+          <li class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a class="footer-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-tel" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
       </address>
     </footer>
